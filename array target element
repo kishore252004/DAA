@@ -1,0 +1,8 @@
+array=[1,2,3,4,6]
+target=int(input("enter the target element\n"))
+n=len(array)
+for i in range(n):
+  if (target==array[i]):
+    print("the element is found at",i)
+  elif(array[i]<target and array[i+1]>target):
+    print("the element would be inserted at position ",(i+1))
