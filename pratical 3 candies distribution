@@ -1,0 +1,10 @@
+a = [1, 2, 3, 4, 5]
+n = len(a)
+candies = 5
+for i in range(n):
+    if a[i] > a[i - 1]:
+        candies += 1
+for i in range(n - 1, 0,-1):
+    if a[i] > a[i - 1]:
+        candies += 1
+print(candies)
